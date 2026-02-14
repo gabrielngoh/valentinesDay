@@ -1,0 +1,103 @@
+@import "tailwindcss";
+section{
+    @apply h-screen text-center flex flex-col justify-center
+}
+section:nth-child(1){
+    @apply bg-gradient-to-br from-pink-100 via-pink-50 to-rose-100;
+}
+section:nth-child(1)>*:not(img){
+        animation: scroll-up  ease-in-out 1s                                        
+
+}
+section:nth-child(2){
+    @apply bg-linear-to-br from-pink-50 via-white to-rose-50
+}
+
+section:nth-child(3){
+    @apply bg-linear-to-br from-pink-50 via-white to-rose-50
+}
+section:nth-child(4){
+    @apply bg-linear-to-br from-pink-50 via-white to-rose-50
+}
+
+.card{
+    @apply rounded-2xl shadow-xl bg-rose-50 p-[5%] text-left mx-[5%] hover:scale-105 hover:shadow-2xl transition-transform cursor-pointer
+}
+.card h1{
+    @apply font-semibold text-xl
+}
+.card img{
+    @apply mb-[2.5%]
+}
+.heartFull , #days{
+   animation: pulseHeart 1.5s ease-in-out  infinite  alternate;
+}
+
+
+#heartLine span {
+    display: inline-block;
+    animation: pulseHeart-up 1.5s ease-in-out infinite alternate;
+}
+ 
+#heartLine span:nth-child(1){ animation-delay: .20s; }
+#heartLine span:nth-child(2){ animation-delay: .4s; }
+#heartLine span:nth-child(3){ animation-delay: .65s; }
+#heartLine span:nth-child(4){ animation-delay: .8s; }
+#heartLine span:nth-child(5){ animation-delay: 1s; }
+
+
+@keyframes pulseHeart {
+    0%{
+      transform: scale(1);
+    }
+    100%{
+        transform: scale(1.2)
+
+    }
+    
+}
+@keyframes pulseHeart-up{
+        0%{
+      transform: scale(1);
+    }
+    100%{
+        transform: translateY(-20px) scale(1.2) ;
+
+    }
+}
+
+@keyframes scroll-up{
+        0%{
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+
+    }
+}
+
+dialog[open]{
+    @apply self-center w-[90%] md:w-2/3 mx-auto rounded-2xl px-[5%] py-[10%] text-center flex flex-col justify-center backdrop:bg-black
+}
+dialog[open] button {
+    @apply mt-4
+}
+dialog[open]{
+    animation: bounce-Top .5s ease-in-out;
+}
+
+
+@keyframes bounce-Top {
+    0%{
+        transform: scale(.25);
+        opacity: 0;
+    }
+    100%
+    {
+         transform: scale(1);
+        opacity: 1;
+    }
+    
+}

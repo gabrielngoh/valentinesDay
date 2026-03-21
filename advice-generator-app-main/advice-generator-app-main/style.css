@@ -1,0 +1,72 @@
+@font-face {
+    font-family: Manrope;
+    src: url(./Manrope/static/Manrope-Regular.ttf);
+}
+
+:root{
+    /*Color Palette
+- Blue 200: hsl(193, 38%, 86%)
+- Green 300: hsl(150, 100%, 66%)
+
+### Neutral
+
+- Blue 600: hsl(217, 19%, 38%)
+- Blue 900: hsl(217, 19%, 24%)
+- Blue 950: hsl(218, 23%, 16%)
+*/
+    --Green300:hsl(150, 100%, 66%);
+
+    --Blue200 : hsl(193, 38%, 86%);
+    --Blue600: hsl(217, 19%, 38%);
+    --Blue900: hsl(217, 19%, 24%);
+    --Blue950: hsl(218, 23%, 16%);
+    
+/* SIZING */
+    --quote_ft : 28px;
+
+}
+
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Manrope;
+    background-color: var(--Blue950);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+.card{
+    position: relative;
+    padding: 1.5rem  ;
+    text-align: center;
+    background-color: var(--Blue900);
+    color: white;
+    width: clamp(320px , 50vh , 300px );
+    height: 300px;
+    border-radius: .5rem;
+    
+}
+.card button{
+    border: 0px solid transparent;
+    padding: .8rem;
+    background-color: var(--Green300);
+    clip-path: circle(50%);
+    position:absolute;
+    bottom:0;
+    left: 50%;
+    transform: translate(-50%,calc((49.6px/2)));
+
+
+}
+.card button img{
+    vertical-align: middle;
+}
+.Title{
+ color: var(--Green300);
+
+}

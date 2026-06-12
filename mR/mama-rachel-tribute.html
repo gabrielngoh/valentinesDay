@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Hommage d'anniversaire à Mama Rachel — Une femme de foi, de sagesse et d'amour de notre communauté d'église." />
+  <meta name="theme-color" content="#1B3A6B" />
+  <title>Joyeux Anniversaire Mama Rachel 🎂</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lato:wght@300;400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div id="scroll-progress" role="progressbar" aria-label="Progression de lecture"></div>
+  <canvas id="particles-canvas" aria-hidden="true"></canvas>
+
+  <nav id="lang-switcher" aria-label="Language / Langue">
+    <button class="lang-btn active" data-target-lang="fr" aria-pressed="true">FR</button>
+    <button class="lang-btn" data-target-lang="en" aria-pressed="false">EN</button>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero" aria-label="En-tête">
+    <div class="hero-stars" id="hero-stars" aria-hidden="true"></div>
+    <div class="hero-halo" aria-hidden="true"></div>
+
+    <div class="hero-photo-wrap">
+      <!--
+        ============================================================
+        PHOTO DE MAMA RACHEL
+        Pour ajouter la vraie photo, remplacez le bloc ci-dessous
+        par : <img src="mama-rachel.jpg" alt="Portrait de Mama Rachel" loading="eager" />
+        ============================================================
+      -->
+      <div class="hero-photo-placeholder" aria-label="Portrait de Mama Rachel">
+        <div class="placeholder-icon">
+          <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="14" r="9"/>
+            <path d="M4 36c0-8.8 7.2-16 16-16s16 7.2 16 16"/>
+          </svg>
+        </div>
+        <p class="placeholder-text">Portrait de<br><strong style="color:rgba(201,168,76,0.9)">Mama Rachel</strong></p>
+        <p class="placeholder-hint">Remplacez par la vraie photo ✨</p>
+      </div>
+    </div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow">
+        <span data-lang="fr" class="active-lang">Avec amour · De toute l'Église</span>
+        <span data-lang="en">With love · From the whole Church</span>
+      </p>
+      <h1 class="hero-title">
+        <span data-lang="fr" class="active-lang">Joyeux Anniversaire<em>Mama Rachel</em></span>
+        <span data-lang="en">Happy Birthday<em>Mama Rachel</em></span>
+      </h1>
+      <p class="hero-subtitle">
+        <span data-lang="fr" class="active-lang">Une femme de foi, de sagesse et d'amour qui a marqué nos vies par sa bienveillance, son enseignement et son exemple chrétien.</span>
+        <span data-lang="en">A woman of faith, wisdom, and love who has marked our lives through her kindness, her teachings, and her Christian example.</span>
+      </p>
+      <a href="#about" class="hero-cta" id="hero-cta">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+        <span data-lang="fr" class="active-lang">Lire notre hommage</span>
+        <span data-lang="en">Read our tribute</span>
+      </a>
+    </div>
+
+    <p class="hero-verse" aria-hidden="true">« Elle ouvre la bouche avec sagesse, et des instructions aimables sont sur sa langue. » — Proverbes 31:26</p>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" aria-labelledby="about-title">
+    <div class="section-wrap">
+      <p class="section-eyebrow reveal">
+        <span data-lang="fr" class="active-lang">Qui est-elle ?</span>
+        <span data-lang="en">Who is she?</span>
+      </p>
+      <h2 class="section-title reveal reveal-delay-1" id="about-title">
+        <span data-lang="fr" class="active-lang">Une femme au <em>cœur d'or</em></span>
+        <span data-lang="en">A woman with a <em>heart of gold</em></span>
+      </h2>
+      <p class="section-lead reveal reveal-delay-2">
+        <span data-lang="fr" class="active-lang">Mama Rachel, tu es bien plus qu'une femme remarquable — tu es un cadeau de Dieu pour notre communauté tout entière.</span>
+        <span data-lang="en">Mama Rachel, you are far more than a remarkable woman — you are a gift from God to our entire community.</span>
+      </p>
+      <div class="section-body reveal reveal-delay-3">
+        <p>
+          <span data-lang="fr" class="active-lang">Professeur de lycée dévouée, tu as consacré ta vie à former des esprits et à nourrir des âmes. En tant qu'ancienne monitrice d'école du dimanche, tu as semé les graines précieuses de la foi, de la sainteté, de l'intégrité et de l'amour de Dieu dans le cœur de nombreux enfants — des graines qui portent aujourd'hui des fruits magnifiques.</span>
+          <span data-lang="en">A dedicated high school teacher, you devoted your life to shaping minds and nurturing souls. As a former Sunday School teacher, you planted precious seeds of faith, holiness, integrity, and love for God in the hearts of many children — seeds that today bear magnificent fruit.</span>
+        </p>
+      </div>
+      <div class="about-divider reveal reveal-delay-3" aria-hidden="true">
+        <span></span><span class="cross-sym">✞</span><span></span>
+      </div>
+      <div class="traits-grid reveal reveal-delay-4">
+        <div class="trait-chip">Douce</div>
+        <div class="trait-chip">Aimante</div>
+        <div class="trait-chip">Bienveillante</div>
+        <div class="trait-chip">Accueillante</div>
+        <div class="trait-chip">Généreuse</div>
+        <div class="trait-chip">Sociable</div>
+        <div class="trait-chip">Engagée</div>
+        <div class="trait-chip">Inspirante</div>
+        <div class="trait-chip">Patiente</div>
+        <div class="trait-chip">Fidèle</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GRATITUDE -->
+  <section id="gratitude" aria-labelledby="gratitude-title">
+    <div class="section-wrap">
+      <p class="section-eyebrow reveal">
+        <span data-lang="fr" class="active-lang">Notre reconnaissance</span>
+        <span data-lang="en">Our gratitude</span>
+      </p>
+      <h2 class="section-title reveal reveal-delay-1" id="gratitude-title">
+        <span data-lang="fr" class="active-lang">Merci pour tout,<br><em>Mama Rachel</em></span>
+        <span data-lang="en">Thank you for everything,<br><em>Mama Rachel</em></span>
+      </h2>
+      <p class="section-lead reveal reveal-delay-2">
+        <span data-lang="fr" class="active-lang">Chaque geste, chaque mot, chaque prière a laissé une empreinte éternelle dans nos cœurs.</span>
+        <span data-lang="en">Every gesture, every word, every prayer has left an eternal imprint in our hearts.</span>
+      </p>
+      <div class="gratitude-grid">
+        <div class="gratitude-card reveal">
+          <div class="gratitude-icon">🌸</div>
+          <div>
+            <p class="gratitude-card-title"><span data-lang="fr" class="active-lang">Ta Bonté</span><span data-lang="en">Your Kindness</span></p>
+            <p class="gratitude-card-text"><span data-lang="fr" class="active-lang">Ta douceur et ta bienveillance ont apaisé tant de cœurs blessés et réchauffé tant d'âmes solitaires au sein de notre communauté.</span><span data-lang="en">Your gentleness and kindness have soothed so many wounded hearts and warmed so many lonely souls in our community.</span></p>
+          </div>
+        </div>
+        <div class="gratitude-card reveal reveal-delay-1">
+          <div class="gratitude-icon">⏳</div>
+          <div>
+            <p class="gratitude-card-title"><span data-lang="fr" class="active-lang">Ta Patience</span><span data-lang="en">Your Patience</span></p>
+            <p class="gratitude-card-text"><span data-lang="fr" class="active-lang">Tu as porté nos faiblesses avec une grâce remarquable, toujours prête à recommencer, à pardonner, à relever.</span><span data-lang="en">You bore our weaknesses with remarkable grace, always ready to start again, to forgive, to lift up.</span></p>
+          </div>
+        </div>
+        <div class="gratitude-card reveal reveal-delay-2">
+          <div class="gratitude-icon">📖</div>
+          <div>
+            <p class="gratitude-card-title"><span data-lang="fr" class="active-lang">Tes Enseignements</span><span data-lang="en">Your Teachings</span></p>
+            <p class="gratitude-card-text"><span data-lang="fr" class="active-lang">Les vérités bibliques que tu as semées continuent de guider nos pas et d'éclairer notre chemin de foi.</span><span data-lang="en">The biblical truths you sowed continue to guide our steps and light our path of faith.</span></p>
+          </div>
+        </div>
+        <div class="gratitude-card reveal reveal-delay-3">
+          <div class="gratitude-icon">🕊️</div>
+          <div>
+            <p class="gratitude-card-title"><span data-lang="fr" class="active-lang">Ta Foi</span><span data-lang="en">Your Faith</span></p>
+            <p class="gratitude-card-text"><span data-lang="fr" class="active-lang">Ta foi inébranlable en Dieu a été un ancrage pour toute notre communauté dans les moments les plus difficiles.</span><span data-lang="en">Your unwavering faith in God has been an anchor for our entire community in the most difficult moments.</span></p>
+          </div>
+        </div>
+        <div class="gratitude-card reveal reveal-delay-1">
+          <div class="gratitude-icon">💪</div>
+          <div>
+            <p class="gratitude-card-title"><span data-lang="fr" class="active-lang">Tes Encouragements</span><span data-lang="en">Your Encouragement</span></p>
+            <p class="gratitude-card-text"><span data-lang="fr" class="active-lang">Tes paroles d'encouragement ont relevé des âmes abattues et ravivé l'espoir là où il semblait éteint.</span><span data-lang="en">Your words of encouragement have lifted downcast souls and rekindled hope where it seemed extinguished.</span></p>
+          </div>
+        </div>
+        <div class="gratitude-card reveal reveal-delay-2">
+          <div class="gratitude-icon">🌿</div>
+          <div>
+            <p class="gratitude-card-title"><span data-lang="fr" class="active-lang">Ton Impact</span><span data-lang="en">Your Impact</span></p>
+            <p class="gratitude-card-text"><span data-lang="fr" class="active-lang">Des générations entières portent ton empreinte dans leur foi, leur caractère, et leur amour pour Dieu.</span><span data-lang="en">Entire generations carry your imprint in their faith, their character, and their love for God.</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEGACY -->
+  <section id="legacy" aria-labelledby="legacy-title">
+    <div class="section-wrap">
+      <p class="section-eyebrow reveal">
+        <span data-lang="fr" class="active-lang">Une Vie Qui Inspire</span>
+        <span data-lang="en">A Life That Inspires</span>
+      </p>
+      <h2 class="section-title reveal reveal-delay-1" id="legacy-title">
+        <span data-lang="fr" class="active-lang">Son <em>héritage</em> vivant</span>
+        <span data-lang="en">Her <em>living</em> legacy</span>
+      </h2>
+      <p class="section-lead reveal reveal-delay-2">
+        <span data-lang="fr" class="active-lang">Mama Rachel, tu n'as pas seulement vécu — tu as semé. Et aujourd'hui, nous sommes les fruits de tes semences.</span>
+        <span data-lang="en">Mama Rachel, you haven't just lived — you have sown. And today, we are the fruit of your seeds.</span>
+      </p>
+      <div class="legacy-timeline">
+        <div class="legacy-item reveal">
+          <div class="legacy-dot">✍️</div>
+          <div>
+            <p class="legacy-label"><span data-lang="fr" class="active-lang">Vocation</span><span data-lang="en">Calling</span></p>
+            <p class="legacy-title"><span data-lang="fr" class="active-lang">Professeur de Lycée</span><span data-lang="en">High School Teacher</span></p>
+            <p class="legacy-text"><span data-lang="fr" class="active-lang">Pendant des années, tu as formé des esprits brillants dans les salles de classe, offrant non seulement des connaissances académiques, mais aussi des leçons de vie, de caractère et d'intégrité.</span><span data-lang="en">For years, you shaped brilliant minds in classrooms, offering not only academic knowledge but also lessons in life, character, and integrity.</span></p>
+          </div>
+        </div>
+        <div class="legacy-item reveal reveal-delay-1">
+          <div class="legacy-dot">✞</div>
+          <div>
+            <p class="legacy-label"><span data-lang="fr" class="active-lang">Service</span><span data-lang="en">Service</span></p>
+            <p class="legacy-title"><span data-lang="fr" class="active-lang">Monitrice d'École du Dimanche</span><span data-lang="en">Sunday School Teacher</span></p>
+            <p class="legacy-text"><span data-lang="fr" class="active-lang">Tu as planté les fondements de la foi dans le cœur des enfants — la sainteté, l'intégrité, l'amour de Dieu — des valeurs qu'ils portent encore aujourd'hui comme un héritage précieux.</span><span data-lang="en">You planted the foundations of faith in children's hearts — holiness, integrity, love for God — values they still carry today as a precious heritage.</span></p>
+          </div>
+        </div>
+        <div class="legacy-item reveal reveal-delay-2">
+          <div class="legacy-dot">🌿</div>
+          <div>
+            <p class="legacy-label"><span data-lang="fr" class="active-lang">Influence</span><span data-lang="en">Influence</span></p>
+            <p class="legacy-title"><span data-lang="fr" class="active-lang">Mentor & Guide Spirituel</span><span data-lang="en">Mentor & Spiritual Guide</span></p>
+            <p class="legacy-text"><span data-lang="fr" class="active-lang">Ta sagesse, tes conseils et ton amour ont guidé des générations entières. Pour beaucoup, tu as été une mère spirituelle, un ancrage sûr dans les tempêtes de la vie.</span><span data-lang="en">Your wisdom, counsel, and love have guided entire generations. For many, you have been a spiritual mother, a safe anchor in life's storms.</span></p>
+          </div>
+        </div>
+        <div class="legacy-item reveal reveal-delay-3">
+          <div class="legacy-dot">✨</div>
+          <div>
+            <p class="legacy-label"><span data-lang="fr" class="active-lang">Identité</span><span data-lang="en">Identity</span></p>
+            <p class="legacy-title"><span data-lang="fr" class="active-lang">Femme de Foi Exemplaire</span><span data-lang="en">Exemplary Woman of Faith</span></p>
+            <p class="legacy-text"><span data-lang="fr" class="active-lang">Avant tout, tu es une femme qui aime Dieu de tout son cœur. Ta vie est un témoignage vivant de la grâce divine, et ta foi a été une lumière pour tous ceux qui te côtoient.</span><span data-lang="en">Above all, you are a woman who loves God with all her heart. Your life is a living testimony of divine grace, and your faith has been a light for all who know you.</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLESSINGS -->
+  <section id="blessings" aria-labelledby="blessings-title">
+    <div class="section-wrap">
+      <p class="section-eyebrow reveal">
+        <span data-lang="fr" class="active-lang">Bénédictions d'Anniversaire</span>
+        <span data-lang="en">Birthday Blessings</span>
+      </p>
+      <h2 class="section-title reveal reveal-delay-1" id="blessings-title">
+        <span data-lang="fr" class="active-lang">La Parole de Dieu<br>pour <em>toi</em></span>
+        <span data-lang="en">God's Word<br>for <em>you</em></span>
+      </h2>
+      <p class="section-lead reveal reveal-delay-2">
+        <span data-lang="fr" class="active-lang">Que ces versets soient comme une couronne de bénédictions pour cette nouvelle et belle année de ta vie.</span>
+        <span data-lang="en">May these verses be like a crown of blessings for this new and beautiful year of your life.</span>
+      </p>
+      <div class="blessings-grid">
+        <div class="blessing-card reveal">
+          <p class="blessing-ref">Nombres 6:24</p>
+          <p class="blessing-verse">« Que l'Éternel te bénisse et te garde ! »</p>
+          <p class="blessing-wish"><span data-lang="fr" class="active-lang">Que la main protectrice de Dieu soit toujours sur toi, et que Sa grâce t'enveloppe chaque jour de cette nouvelle année comme un manteau de lumière.</span><span data-lang="en">May God's protecting hand always be upon you, and may His grace wrap around you every day of this new year like a cloak of light.</span></p>
+        </div>
+        <div class="blessing-card reveal reveal-delay-1">
+          <p class="blessing-ref">Jérémie 29:11</p>
+          <p class="blessing-verse">« Car je connais les projets que j'ai formés sur vous, dit l'Éternel, projets de paix et non de malheur, afin de vous donner un avenir et de l'espérance. »</p>
+          <p class="blessing-wish"><span data-lang="fr" class="active-lang">Que cette promesse divine soit ta certitude : Dieu a de grands projets pour toi, remplis d'espoir et d'un avenir radieux à Sa gloire.</span><span data-lang="en">May this divine promise be your certainty: God has great plans for you, filled with hope and a radiant future to His glory.</span></p>
+        </div>
+        <div class="blessing-card reveal reveal-delay-2">
+          <p class="blessing-ref">Ésaïe 40:31</p>
+          <p class="blessing-verse">« Mais ceux qui se confient en l'Éternel renouvellent leur force. Ils prennent le vol comme les aigles ; ils courent, et ne se lassent point ; ils marchent, et ne se fatiguent point. »</p>
+          <p class="blessing-wish"><span data-lang="fr" class="active-lang">Que Dieu renouvelle chaque matin ta force, ta vitalité et ta passion pour la vie. Que tu voles toujours comme un aigle vers de nouveaux sommets de Sa grâce.</span><span data-lang="en">May God renew each morning your strength, vitality, and passion for life. May you always soar like an eagle toward new heights of His grace.</span></p>
+        </div>
+        <div class="blessing-card reveal reveal-delay-3">
+          <p class="blessing-ref">Proverbes 3:5-6</p>
+          <p class="blessing-verse">« Confie-toi en l'Éternel de tout ton cœur, et ne t'appuie pas sur ta sagesse ; reconnais-le dans toutes tes voies, et il aplanira tes sentiers. »</p>
+          <p class="blessing-wish"><span data-lang="fr" class="active-lang">Tu as vécu cette vérité tout au long de ta belle vie. Que Dieu continue d'aplanir chacun de tes sentiers et de diriger chacun de tes pas avec amour.</span><span data-lang="en">You have lived this truth throughout your beautiful life. May God continue to smooth each of your paths and lovingly direct each of your steps.</span></p>
+        </div>
+        <div class="blessing-card reveal reveal-delay-1" style="grid-column:1/-1">
+          <p class="blessing-ref">Psaume 16:11</p>
+          <p class="blessing-verse">« Tu me feras connaître le sentier de la vie ; il y a une abondance de joies devant ta face, des délices éternelles à ta droite. »</p>
+          <p class="blessing-wish"><span data-lang="fr" class="active-lang">Que ta vie soit remplie d'une joie abondante et d'une paix profonde — la joie qui vient de la présence de Dieu, une joie que personne ne pourra jamais t'ôter, Mama Rachel.</span><span data-lang="en">May your life be filled with abundant joy and deep peace — the joy that comes from God's presence, a joy no one can ever take from you, Mama Rachel.</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRAYER -->
+  <section id="prayer" aria-labelledby="prayer-title">
+    <div class="section-wrap">
+      <p class="section-eyebrow reveal">
+        <span data-lang="fr" class="active-lang">Prière d'Anniversaire</span>
+        <span data-lang="en">Birthday Prayer</span>
+      </p>
+      <h2 class="section-title reveal reveal-delay-1" id="prayer-title">
+        <span data-lang="fr" class="active-lang">Notre prière<br>pour <em>toi</em></span>
+        <span data-lang="en">Our prayer<br>for <em>you</em></span>
+      </h2>
+      <div class="prayer-card reveal reveal-delay-2">
+        <p class="prayer-opening">
+          <span data-lang="fr" class="active-lang">Seigneur Dieu, Père céleste, en ce jour béni d'anniversaire, nous élevons nos voix et nos cœurs vers Toi pour celle que Tu nous as donnée comme trésor précieux…</span>
+          <span data-lang="en">Lord God, Heavenly Father, on this blessed birthday, we lift our voices and hearts to You for the one You have given us as a precious treasure…</span>
+        </p>
+        <div class="prayer-body">
+          <p><span data-lang="fr" class="active-lang">Nous Te rendons grâce pour la vie de Mama Rachel — pour sa foi, sa bonté, sa sagesse et son amour qui ont enrichi notre communauté au-delà de toute mesure. Tu lui as accordé un cœur rare : un cœur qui donne sans compter, qui enseigne avec grâce et qui aime à l'image de Christ.</span><span data-lang="en">We give thanks for Mama Rachel's life — for her faith, her kindness, her wisdom, and her love that have enriched our community beyond measure. You gave her a rare heart: a heart that gives without counting, that teaches with grace, and that loves in the image of Christ.</span></p>
+          <p><span data-lang="fr" class="active-lang">Seigneur, couvre-la de Ta protection divine. Que Ta main puissante soit un bouclier autour d'elle, préservant sa santé, sa paix et sa joie chaque jour. Fortifie-la dans son corps, dans son âme et dans son esprit — renouvelle-la comme l'aigle.</span><span data-lang="en">Lord, cover her with Your divine protection. May Your mighty hand be a shield around her, preserving her health, her peace, and her joy each day. Strengthen her in body, soul, and spirit — renew her like the eagle.</span></p>
+          <p><span data-lang="fr" class="active-lang">Bénis abondamment sa famille. Verse Ta grâce sur ses proches, et que Ta paix qui surpasse toute intelligence règne dans son foyer. Continue de l'utiliser comme une bénédiction rayonnante pour tous ceux qui l'entourent.</span><span data-lang="en">Abundantly bless her family. Pour Your grace upon her loved ones, and may Your peace that surpasses all understanding reign in her home. Continue to use her as a radiant blessing for all those around her.</span></p>
+          <p><span data-lang="fr" class="active-lang">Accorde-lui des années nouvelles remplies de Ta présence, de Tes faveurs et de Ta grâce inépuisable. Que chaque matin soit une nouvelle découverte de Ton amour. Et que lorsqu'elle regardera en arrière, elle ne voie que Ta fidélité et Ta bonté qui l'ont suivie tous les jours de sa vie.</span><span data-lang="en">Grant her new years filled with Your presence, Your favor, and Your inexhaustible grace. May each morning be a new discovery of Your love. And when she looks back, may she see only Your faithfulness and goodness that have followed her all the days of her life.</span></p>
+        </div>
+        <p class="prayer-amen">Amen. 🙏</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL -->
+  <section id="final" aria-labelledby="final-title">
+    <div class="section-wrap">
+      <div class="final-card reveal">
+        <span class="final-heart" aria-hidden="true">❤️</span>
+        <h2 class="final-title" id="final-title">
+          <span data-lang="fr" class="active-lang">Merci<em>Mama Rachel</em></span>
+          <span data-lang="en">Thank You<em>Mama Rachel</em></span>
+        </h2>
+        <p class="final-body">
+          <span data-lang="fr" class="active-lang">Pour ton amour qui ne faillit jamais. Pour ta foi qui nous a portés. Pour tes enseignements qui nous ont formés. Pour tes encouragements qui nous ont relevés. Pour ton service fidèle et ton impact qui traversera les générations. Tu nous as appris ce que signifie vraiment aimer Dieu et aimer les autres de tout notre cœur.</span>
+          <span data-lang="en">For your love that never fails. For your faith that has carried us. For your teachings that have shaped us. For your encouragements that have lifted us. For your faithful service and your impact that will cross generations. You have taught us what it truly means to love God and love others with all our heart.</span>
+        </p>
+        <p class="final-quote">
+          <span data-lang="fr" class="active-lang">« Ton sourire a réchauffé des cœurs, ta foi a inspiré des vies et ta bienveillance a touché des générations. »</span>
+          <span data-lang="en">« Your smile has warmed hearts, your faith has inspired lives, and your kindness has touched generations. »</span>
+        </p>
+        <p class="final-signature">
+          <span data-lang="fr" class="active-lang">Avec tout notre amour et notre gratitude,<br>La communauté de l'Église ❤️</span>
+          <span data-lang="en">With all our love and gratitude,<br>The Church Community ❤️</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Fait avec <em>♥</em> pour <em>Mama Rachel</em> — Joyeux Anniversaire 🎂</p>
+  </footer>
+
+  <script src="./app.js" defer></script>
+</body>
+</html>
